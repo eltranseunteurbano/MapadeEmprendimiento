@@ -13,7 +13,7 @@
     padding-top: 80px;
     box-sizing: border-box;
 
-    background-image: url("/Background Image.png");
+    background-image: url("./Background Image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -127,4 +127,209 @@
     50%{
         transform: translateY(15px);
     }
+}
+
+
+@media only screen and ( min-width: 1200px ){
+    .Header{
+        &__burger{
+            display: none;
+        }
+    }
+}
+
+@media only screen and ( min-width: 992px ) and ( max-width: 1200px ) {
+    .Carrousel__home{
+        &__info{
+             &__text{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                
+                width: 40%;
+                text-align: center;
+                color: $white;
+                
+                h1{
+                    font-weight: bolder;
+                    font-size: 30px;
+                    margin-bottom: 25px;
+                }
+                p{
+                    box-sizing: border-box;
+    
+                    max-width:100%;
+                    
+                }
+            }
+            
+            &__img{
+                box-sizing: border-box;
+                width: 50%;
+                img{
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+        }
+
+        &__img{
+            box-sizing: border-box;
+            width: 90%;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            img{
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 992px ) {
+    .Carrousel__home{
+
+        padding: 0 50px;
+        padding-top: 40px;
+       
+        &__info{
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            
+            margin-bottom: 25px;
+            
+            &__text{
+                width: 100%;
+                h1{
+                    font-weight: bolder;
+                    font-size: 30px;
+                    margin-bottom: 25px;
+                }
+                p{
+                    box-sizing: border-box;
+                    max-width: 80%;
+                }
+            }
+            
+            &__img{
+                box-sizing: border-box;
+                width: 90%;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img{
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+        }
+    
+        &__points{
+            margin-bottom: 10px; 
+        }
+    
+        &__btn{
+            margin-bottom: 10px;
+        }
+    
+        &__btn:hover{
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transform: translateY(10px);
+        }
+    
+        &__icon{
+            color: $white;
+            font-size: 25px;
+            margin-bottom: 80px;
+            transition: all .4s;
+            animation: bounce 2s infinite;
+        
+        }
+    }
+    
+}
+
+@media only screen and ( max-width: 768px ){
+    .Carrousel__home{
+
+        padding: 0 50px;
+        padding-top: 40px;
+       
+        &__info{
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            
+            margin-bottom: 25px;
+            
+            &__text{
+                width: 100%;
+                h1{
+                    font-weight: bolder;
+                    font-size: 30px;
+                    margin-bottom: 25px;
+                }
+                p{
+                    box-sizing: border-box;
+                    max-width: 80%;
+                }
+            }
+            
+            &__img{
+                box-sizing: border-box;
+                width: 90%;
+                margin-bottom: 40px;
+                img{
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+        }
+    
+        &__points{
+            margin-bottom: 10px; 
+        }
+    
+        &__btn{
+            margin-bottom: 10px;
+        }
+    
+        &__btn:hover{
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transform: translateY(10px);
+        }
+    
+        &__icon{
+            color: $white;
+            font-size: 25px;
+            margin-bottom: 80px;
+            transition: all .4s;
+            animation: bounce 2s infinite;
+        
+        }
+    }
+    
 }

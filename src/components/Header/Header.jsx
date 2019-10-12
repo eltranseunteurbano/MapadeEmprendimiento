@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 import Logo from '../Logo/Logo';
 
@@ -12,6 +14,7 @@ export default class Header extends React.Component {
         this.state = {
             scrollPosition: window.pageYOffset,
             visible:true,
+            responsive:false,
         }
     }
 
@@ -40,18 +43,29 @@ export default class Header extends React.Component {
         window.removeEventListener("scroll", this.onHandleScroll);
     }
 
+    menuResponsive = () => {
+        this.setState({
+            responsive: !this.state.responsive,
+        })
+        console.log(this.state.responsive);
+    }
+
     render(){
         return(
             <header className={this.state.visible ? 'Header' : 'Header Header-vis'} id="main-header">
                 <div className="Header__logo">
                     <Logo />
                 </div>
-                <nav className="Header__nav">
+                <nav onClick={ () => this.menuResponsive() } className={!this.state.responsive ? "Header__nav Header__nav-resp" : "Header__nav"}>
                     <Link to="/" className="Header__nav__item"> <div>Emprendimientos </div> </Link>
                     <Link to="/" className="Header__nav__item"> <div>Servicios </div></Link>
                     <Link to="/" className="Header__nav__item"> <div>Eventos </div></Link>
                     <Link to="/" className="Header__nav__item"> <div>Soy Emprendedor </div></Link>
                 </nav>
+
+                <div className="Header__burger">
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
         </header>
         )
     }

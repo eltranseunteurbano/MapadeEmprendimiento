@@ -73,3 +73,13 @@
 .EntrepreneurCard__two{
     background: $white;
 }
+
+@media only screen and ( max-width: 768px ){
+    .EntrepreneurCard {
+        margin-right: 0;
+    }
+
+    .EntrepreneurCard__two{
+        background: $white;
+    }
+}   
