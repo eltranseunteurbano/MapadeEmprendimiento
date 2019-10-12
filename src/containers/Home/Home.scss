@@ -1,0 +1,14 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    .Carrousel__home, .Search{
+        margin-bottom: 40px;
+    }
+}

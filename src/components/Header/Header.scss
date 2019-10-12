@@ -1,0 +1,110 @@
+@import '../../styles/Color.scss';
+
+.Header-vis {
+    box-sizing: border-box;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    animation: appear 4s;
+    background: $lightRed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+@keyframes appear{
+    0%{
+        top: -200px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+.Header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    padding: 0 100px;
+    height: 70px;
+    transition: all .4s;
+    animation: appear 2s;
+
+    background-image: url('../Carrousel/Background Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: stretch;
+        align-items: center;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+
+            color: white;
+            font-weight: bolder;
+            padding: 0 15px;
+            height: 70px;
+            border-bottom: solid 5px transparent;
+            transition: all .4s;
+
+            div {
+                margin-top: 5px;
+            }
+        }
+
+        &__item:hover {
+            border-bottom: solid 5px $white;
+        }
+
+        &__item:last-child {
+            div {
+                background-color: $white;
+                color: $lightRed;
+                border-radius: 25px;
+                padding: 10px 20px;
+
+                transition: all .4s;
+                cursor: pointer;
+            }
+        }
+
+        &__item:last-child:hover {
+            div {
+                background-color: $white;
+                color: $lightRed;
+            }
+
+            border-bottom: solid 10px transparent;
+
+        }
+    }
+
+    &__nav {
+        &__item-selected {
+            border-color: $white;
+        }
+    }
+
+
+
+
+    a {
+        text-decoration: none;
+    }
+
+}

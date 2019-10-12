@@ -1,0 +1,45 @@
+@import '../../styles//Color.scss';
+.Search{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 70%;
+
+    label{
+        width: 100%;
+        p{
+            font-weight: bolder;
+            font-size: 18px;
+            color: $black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        input{
+            background: $white;
+            border: solid 1px $gray4;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            border-radius: 50px;
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            color: $black;
+            font-size: 16px;
+            font-weight: bolder;
+            transition: all .4s;
+        }
+
+        input::placeholder{
+            color: $gray4;
+            font-family: 'Lato', sans-serif;
+            font-weight: normal;
+        }
+
+        input:focus{
+            border: solid 2px $darkRed;
+        }
+    }
+}
