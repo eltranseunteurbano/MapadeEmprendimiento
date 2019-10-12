@@ -33,7 +33,7 @@ const Footer = () => (
                 </article>
             </section>
             <section className="Footer__botttom">
-                <img src={process.env.PUBLIC_URL + './logo jamundi.png'} alt="Logo de la alcaldía de Jamundí"/>
+                <img src={process.env.PUBLIC_URL + '/logo jamundi.png'} alt="Logo de la alcaldía de Jamundí"/>
                 <h1>ALCALDÍA DE JAMUNDÍ</h1>
                 <p>Todos los derechos reservados</p>
             </section>

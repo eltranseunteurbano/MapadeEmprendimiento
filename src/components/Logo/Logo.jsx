@@ -5,7 +5,7 @@ import './Logo.scss';
 const Logo = () => (
     <Link to="/" alt="Logo" className="Logo">
             <div className="Logo__circle">
-                <img src={process.env.PUBLIC_URL + 'Ant Icon.png'} alt=""/>
+                <img src={process.env.PUBLIC_URL + '/Ant Icon.png'} alt=""/>
             </div>
             <div className="Logo__square"> 
                 <p>MAPA DE</p>
