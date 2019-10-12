@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MapadeEmprendimiento/static/css/main.b5ec655c.chunk.css",
+    "main.js": "/MapadeEmprendimiento/static/js/main.30fe3bc7.chunk.js",
+    "main.js.map": "/MapadeEmprendimiento/static/js/main.30fe3bc7.chunk.js.map",
+    "runtime-main.js": "/MapadeEmprendimiento/static/js/runtime-main.11b2dea3.js",
+    "runtime-main.js.map": "/MapadeEmprendimiento/static/js/runtime-main.11b2dea3.js.map",
+    "static/js/2.9a0aab7e.chunk.js": "/MapadeEmprendimiento/static/js/2.9a0aab7e.chunk.js",
+    "static/js/2.9a0aab7e.chunk.js.map": "/MapadeEmprendimiento/static/js/2.9a0aab7e.chunk.js.map",
+    "index.html": "/MapadeEmprendimiento/index.html",
+    "precache-manifest.015305950929cb2f41ccbf1017f43c26.js": "/MapadeEmprendimiento/precache-manifest.015305950929cb2f41ccbf1017f43c26.js",
+    "service-worker.js": "/MapadeEmprendimiento/service-worker.js",
+    "static/css/main.b5ec655c.chunk.css.map": "/MapadeEmprendimiento/static/css/main.b5ec655c.chunk.css.map",
+    "static/media/Carrousel.scss": "/MapadeEmprendimiento/static/media/Background Image.82addd02.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11b2dea3.js",
+    "static/js/2.9a0aab7e.chunk.js",
+    "static/css/main.b5ec655c.chunk.css",
+    "static/js/main.30fe3bc7.chunk.js"
+  ]
+}
