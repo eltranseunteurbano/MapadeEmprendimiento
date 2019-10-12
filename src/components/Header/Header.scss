@@ -9,20 +9,32 @@
     animation: appear 4s;
     background: $lightRed;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    z-index: 10;
 }
 
 
-@keyframes appear{
-    0%{
+@keyframes appear {
+    0% {
         top: -200px;
         opacity: 0;
     }
-    100%{
+
+    100% {
         top: 0;
         opacity: 1;
     }
 }
+
+@keyframes appearMenu {
+    0% {
+        top: -200px;
+    }
+
+    100% {
+        top: 70px;
+    }
+}
+
 .Header {
     display: flex;
     flex-direction: row;
@@ -39,6 +51,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
     &__nav {
         display: flex;
         flex-direction: row;
@@ -100,7 +113,7 @@
         }
     }
 
-    &__burger{
+    &__burger {
         font-size: 20px;
         transition: all .4s;
         color: $white;
@@ -116,71 +129,132 @@
         cursor: pointer;
     }
 
-    &__burger:hover{
+    &__burger:hover {
         background: $white;
         color: $lightRed;
     }
+
     a {
         text-decoration: none;
     }
 
 }
 
+.Header__nav-resp {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    width: 100%;
+    background: $white;
 
-@media only screen and ( min-width: 1200px ){
-    .Header{
-        &__burger{
-            display: none;
+    position: fixed;
+    z-index: 5;
+    top:70px;
+    left: 0;
+
+    border-top: solid 1px $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    animation: appearMenu 1s;
+
+    .Header__nav__item {
+        color: $lightRed;
+        font-weight: bolder;
+        padding: 0 15px;
+        height: 40px;
+        border-bottom: solid 1px $gray4;
+        transition: all .4s;
+        width: 100%;
+
+        div {
+            margin-top: 5px;
         }
+    }
+
+    .Header__nav__item:hover {
+        background: $lightRed;
+        color: $white;
+    }
+
+    .Header__nav__item:last-child:hover {
+        div {
+            background: $lightRed;
+            color: $white;
+        }
+
+        border-bottom: none;
+
     }
 }
 
-@media only screen and ( min-width: 992px ) and ( max-width: 1200px ) {
-    .Header{
-        &__burger{
+
+@media only screen and (min-width: 1200px) {
+    .Header {
+        &__burger {
             display: none;
         }
     }
+
+    .Header__nav-rep{
+        display: none !important;
+    }
 }
 
-@media only screen and ( min-width: 768px ) and ( max-width: 992px ) {
-    .Header{
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .Header {
+        &__burger {
+            display: none !important;
+        }
+    }
+
+    .Header__nav-rep{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .Header {
         padding: 0 50px;
 
-        .Logo{
-            &__circle{
+        .Logo {
+            &__circle {
                 transform: translateX(0);
                 opacity: 1;
             }
         }
 
-        &__burger{
+        &__burger {
             display: flex;
         }
 
-        &__nav{
+        &__nav {
             display: none;
         }
     }
 }
 
-@media only screen and ( max-width: 768px ){
-    .Header{
+@media only screen and (max-width: 768px) {
+    .Header {
         padding: 0 50px;
 
-        .Logo{
-            &__circle{
+        .Logo {
+            &__circle {
                 transform: translateX(0);
                 opacity: 1;
             }
         }
 
-        &__burger{
+        &__burger {
             display: flex;
         }
 
-        &__nav{
+        &__nav {
             display: none;
         }
     }
+
+
 }

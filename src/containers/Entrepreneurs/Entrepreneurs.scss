@@ -1,0 +1,13 @@
+.Entrepreneurs{
+    width: 100%;
+    min-height: 600px;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+    }
+}
